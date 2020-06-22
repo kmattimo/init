@@ -1,7 +1,9 @@
 #--- Configuring Windows properties ---
 #--- Windows Features ---
 # Show hidden files, Show protected OS files, Show file extensions
-Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions
+Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowFullPathInTitleBar -EnableShowFileExtensions
+# -EnableShowFullPathInTitleBar
+# -EnableShowProtectedOSFiles
 
 #--- File Explorer Settings ---
 # will expand explorer to the actual folder you're in
@@ -12,4 +14,5 @@ Set-ItemProperty -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\
 Set-ItemProperty -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced -Name LaunchTo -Value 1
 #taskbar where window is open for multi-monitor
 Set-ItemProperty -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced -Name MMTaskbarMode -Value 2
+
 
