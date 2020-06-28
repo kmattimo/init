@@ -1,8 +1,10 @@
 
 # Letsgo
-`Set-Executionpolicy`
-`Set-ExecutionPolicy Unrestricted -Force`
-`. { iwr -useb https://boxstarter.org/bootstrapper.ps1 } | iex; Get-Boxstarter -Force`
+<pre>Set-ExecutionPolicy Unrestricted -Force;. { iwr -useb https://boxstarter.org/bootstrapper.ps1 } | iex; Get-Boxstarter -Force</pre>
+
+<pre>Set-ExecutionPolicy Unrestricted -Force</pre>
+
+<pre>. { iwr -useb https://boxstarter.org/bootstrapper.ps1 } | iex; Get-Boxstarter -Force</pre>
 
 Chocolately?
 `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))`
